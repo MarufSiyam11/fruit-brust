@@ -9,12 +9,12 @@
 
 </head>
 <body>
-    <header class="md:container md:mx-auto">
+    <header class="">
 <nav class="bg-red-300 text-white rounded-full ">
     <div class="navbar  ">
         <div class="navbar-start">
           <div class="dropdown">
-            <ul class="flex items-center justify-between gap-5">
+            <ul class="grid grid-cols-4 items-center justify-between gap-5">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -27,13 +27,16 @@
           <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
         </div>
         <div class="navbar-end  ">
-            <label for="">
+            <label for="" class="">
+              
             <input type="text" placeholder="Search"  class="input input-bordered w-24 md:w-auto" />
-            </label>
-          <button class="btn btn-ghost btn-circle ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
+            <button class="btn btn-ghost btn-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            </button>
+          </label>
+        
         </div>
+     
       </div>
 </nav>
     </header>
@@ -41,10 +44,10 @@
       <section class="md:container md:mx-auto">
         <div class="carousel rounded-xl w-full  p-20">
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="./images/banner1.png" class="w-full" />
+            <img src="./images/banner1.png" class="w-full md:w-full lg:w-full sm:w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle">❮</a> 
-      <div class="text-white   text-center w-80">
+      <div class="text-white md:w-2/5  text-center w-80">
         <h3 class="font-base text-4xl font-extrabold w-60">Exotic tastes at your doorstep</h3>
         <p>We supply highly quality organic products</p>
         <button class="btn btn-secondary  text-center">Shop Now</button>
@@ -85,35 +88,29 @@
     <p class="text-xs text-slate-700 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
   </div>
   <div>
-    <div class="">
-      <table class=" ">
+       <!-- timer -->
+<div class="">
+  <div class="grid gap-10 grid-cols-8">
+    <h3>12</h3>
+    <h3>:</h3>
+    <h3>11</h3>
+    <h3>:</h3>
+    <h3>8</h3>
+    <h3>:</h3>
+    <h3>09</h3>
 
-       
-          <tr>
-            <th>29</th>
-            <th>:</th>
-            <th>12</th>
-            <th>:</th>
-            <th>45</th>
-            <th>:</th>
-            <th>09</th>
-            <th></th>
-          </tr>
-        
-       
-          <tr class="text-xs text-center gap-y-9 ">
-            <th>Days</th>
-            <td>Hours</td>
-            <td>Minutes</td>
-            <td>Seconds</td>
-          </tr>
-     
-      </table>
-    </div>
+  </div>
+  <div class="grid grid-cols-4">
+    <h4>Years</h4>
+    <h4>Hours</h4>
+    <h4>Minutes</h4>
+    <h4>Seconds</h4>
+  </div>
+</div>
   </div>
 </div>
 <section class="justify-center items-center">
-  <div  class="flex gap-10 grid-cols-4 lg:grid-cols-1">
+  <div  class="grid gap-15 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
   <!-- card 1 -->
   <div class="card w-96 bg-base-100 shadow-xl">
     <figure><img src="./images/fruit6.png" alt="" /></figure>
@@ -301,7 +298,7 @@
   <button class="btn btn-error">Shop All</button>
 </div>
 </section>
-<section class=" font-extrabold text-white">
+<section class=" font-extrabold bg-no-repeat text-white">
   <div>
     <div class=" min-h-screen" style="background-image: url(./images/banner1.png);">
       <div class=" bg-opacity-60"></div>
